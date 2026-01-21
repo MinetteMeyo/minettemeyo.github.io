@@ -1,6 +1,125 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zongo Meyo (Minette) - Researcher</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f9fafb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: #4b5563;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+      text-align: center;
+    }
+  </style>
+</head>
+
 <body>
-  <h1>Hello World!</h1>
-  <p>Welcome !</p>
+  <div class="container">
+
+    <header>
+      <h1>Zongo Meyo (Minette)</h1>
+      <div class="subtitle">
+        Professional Researcher | Software Engineering Maintenance | AI & IoT Apps Security
+      </div>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        I am a researcher and software engineer with interests in artificial intelligence,
+        software engineering, and security. My work focuses on analyzing, designing,
+        and evaluating intelligent systems, with a particular interest in empirical
+        studies and real-world applications.
+      </p>
+    </section>
+
+    <section>
+      <h2>Research & Profiles</h2>
+      <ul>
+        <li><a href="https://www.researchgate.net/profile/Zongo-Meyo" target="_blank">ResearchGate</a></li>
+        <li><a href="https://orcid.org/my-orcid?orcid=0000-0001-9633-4758" target="_blank">ORCID</a></li>
+        <li><a href="https://github.com/MinetteMeyo" target="_blank">GitHub</a></li>
+        <li><a href="https://scholar.google.com/citations?hl=en&user=Iz3IpC4AAAAJ" target="_blank">Google Scholar</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Activities</h2>
+      <ul>
+        <li>Academic research and scientific writing</li>
+        <li>Software engineering and open-source development</li>
+        <li>Empirical evaluation of software systems</li>
+        <li></li>
+        <li>Teaching, tutoring, supervision, mentoring, peer reviewing, and technical reviewing</li>
+      </ul>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Zongo Meyo
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
