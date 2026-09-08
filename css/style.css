@@ -29,37 +29,37 @@ a {
 }
 
 
-/* ---------- Navigation ---------- */
+/* ---------- Sidebar navigation ---------- */
 
-.navbar {
-    position: sticky;
+.sidebar {
+    position: fixed;
+    left: 0;
     top: 0;
-    z-index: 100;
+    width: 240px;
+    height: 100vh;
+    padding: 40px 30px;
+    border-right: 1px solid #eee;
     background: #fff;
-    border-bottom: 1px solid #eee;
 }
 
-.nav-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px 40px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-name {
+.sidebar-name {
     font-weight: bold;
+    margin-bottom: 50px;
 }
 
 .nav-links {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 18px;
 }
 
-.nav-links a:hover {
-    text-decoration: underline;
+.nav-links a {
+    color: #666;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #222;
 }
 
 
