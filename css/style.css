@@ -28,7 +28,6 @@ a {
     padding: 80px 40px;
 }
 
-
 /* ---------- Sidebar navigation ---------- */
 
 .sidebar {
@@ -40,17 +39,13 @@ a {
     padding: 40px 30px;
     border-right: 1px solid #eee;
     background: #fff;
-}
-
-.sidebar-name {
-    font-weight: bold;
-    margin-bottom: 50px;
+    z-index: 100;
 }
 
 .nav-links {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 16px;
 }
 
 .nav-links a {
@@ -62,8 +57,11 @@ a {
     color: #222;
 }
 
-
-/* ---------- Hero ---------- */
+/* ---------- Layout ---------- */
+main,
+footer {
+    margin-left: 240px;
+}
 
 .hero {
     min-height: 70vh;
@@ -141,6 +139,35 @@ h3 {
     margin-bottom: 20px;
 }
 
+/* ---------- Publications ---------- */
+
+.publication {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 35px;
+    padding: 35px 0;
+    border-top: 1px solid #eee;
+}
+
+.publication-year {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.publication h3 {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+.publication-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 12px;
+}
+
+.publication-links a {
+    text-decoration: underline;
+}
 
 /* ---------- Cards / grids ---------- */
 
@@ -184,24 +211,31 @@ footer {
 
 @media (max-width: 768px) {
 
-    .nav-container,
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    main,
+    footer {
+        margin-left: 0;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .hero-container {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .nav-links {
-        flex-wrap: wrap;
-        gap: 12px;
-    }
-
     .hero h1 {
         font-size: 3rem;
-    }
-
-    .hero-image img {
-        width: 200px;
-        height: 200px;
     }
 
     .research-grid,
@@ -209,9 +243,9 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .section-container,
-    .hero-container {
-        padding: 60px 25px;
+    .publication {
+        grid-template-columns: 1fr;
+        gap: 8px;
     }
 }
 
