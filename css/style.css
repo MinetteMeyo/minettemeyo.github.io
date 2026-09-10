@@ -28,6 +28,12 @@ a {
     padding: 80px 40px;
 }
 
+.service-image img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+}
+
 /* ---------- Sidebar navigation ---------- */
 
 .sidebar {
